@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import os
 
-API = os.environ.get("API_URL", "https://sumative-plant-disease-classifier.onrender.com/")
+API = os.environ.get("API_URL", "https://sumative-plant-disease-classifier.onrender.com").rstrip("/")
 
 DISEASE_INFO = {
     "Tomato_Bacterial_Spot": (
