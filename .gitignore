@@ -7,9 +7,6 @@ data/train/*
 data/test/*
 !data/train/.gitkeep
 !data/test/.gitkeep
-models/*.h5
-models/class_names.json
-
 .DS_Store
 
 .env

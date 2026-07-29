@@ -84,7 +84,7 @@ with tab2:
     st.write("Generate from the training notbook")
     for img_name , caption in [
         ("class_distribution.png", "Class distribution — checks for class imbalance."),
-        ("sample_grid.png", "Sample images per class — visual separability check."),
+        ("sample_images.png", "Sample images per class — visual separability check."),
         ("color_histogram.png", "Average color profile per class — diseased vs healthy signal."),
         ("confusion_matrix.png", "Confusion matrix on the held-out test set."),
 

@@ -1,5 +1,5 @@
 services:
-  api:
+  backend:
     build: .
     expose:
       - "8000"
@@ -13,4 +13,15 @@ services:
     ports:
       - "8080:80"
     depends_on:
-      - api
+      - backend
+
+  frontend:
+    build:
+      context: .
+      dockerfile: ui/Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://nginx:80
+    depends_on:
+      - nginx

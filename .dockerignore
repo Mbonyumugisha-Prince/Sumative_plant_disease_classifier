@@ -1,6 +1,7 @@
 venv
 data
-notebook
+notebook/*.ipynb
+notebook/.ipynb_checkpoints
 .git
 .pytest_cache
 __pycache__
