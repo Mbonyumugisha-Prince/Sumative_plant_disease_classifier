@@ -1,0 +1,16 @@
+tensorflow==2.21.0
+protobuf>=6.31.1,<7.0.0
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+streamlit==1.55.0
+pillow==10.3.0
+numpy==1.26.4
+scikit-learn==1.4.2
+matplotlib==3.8.4
+seaborn==0.13.2
+requests==2.31.0
+locust==2.27.0
+notebook==7.6.1
+nbconvert==7.17.1
+ipykernel==7.3.0
