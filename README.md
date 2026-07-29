@@ -3,8 +3,20 @@
 A end-to-end machine learning pipeline that classifies tomato leaf diseases from a
 photo, with a full MLOps loop: prediction, bulk data upload, and one-click retraining.
 
-- **Video Demo:** _TODO: add YouTube link here_
-- **Deployed URL:** _TODO: add public URL here, if deployed_
+- **Video Demo:** https://www.youtube.com/watch?v=mCk6PUxcik8
+- **Deployed App (frontend):** https://sumative-plant-disease-classifier-1.onrender.com/
+- **Deployed API (backend):** https://sumative-plant-disease-classifier.onrender.com/
+
+> **Note on the free-tier deployment:** both services are hosted on Render's
+> free tier, which spins a service down after a period of inactivity. The
+> backend does **not** wake itself up automatically when you open the
+> frontend — if it's been idle, the first request from the dashboard will
+> time out. Before using the live app, open the backend's health endpoint
+> directly first and wait for it to respond:
+> https://sumative-plant-disease-classifier.onrender.com/health
+> Once that returns `{"status": "up", ...}`, the backend is awake and the
+> frontend app will work normally. This is a limitation of the free hosting
+> tier, not the application itself.
 
 ## Project Description
 
